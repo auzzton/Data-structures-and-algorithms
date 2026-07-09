@@ -1,6 +1,8 @@
 from collections import deque
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        if k == 1:
+            return nums
         l = r = 0
         res = []
         q = deque()
